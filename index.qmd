@@ -1,10 +1,12 @@
 ---
 title: "Assignment 01"
 subtitle: "System Information Proof"
-author: "junhao241"
+author: junhao241
+format:
+  html: default
 ---
 
-下面这个 Python 代码单元会在渲染时运行，输出当前 EC2 环境的系统信息（作为运行证明）：
+Below is a Python code cell that will run during rendering, and output system information from the current EC2 environment.
 
 ```{python}
 import platform
@@ -19,9 +21,4 @@ mem = psutil.virtual_memory()
 print("Total Memory (MB):", round(mem.total / (1024**2), 2))
 print("Available Memory (MB):", round(mem.available / (1024**2), 2))
 
-cat > about.qmd << 'EOF'
----
-title: "About"
----
 
-This is my personal GitHub Pages site, rendered and published using **Quarto** directly from an AWS EC2 instance.

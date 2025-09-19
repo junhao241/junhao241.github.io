@@ -111,15 +111,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#cat-about.qmd-eof" id="toc-cat-about.qmd-eof" class="nav-link active" data-scroll-target="#cat-about.qmd-eof">cat &gt; about.qmd &lt;&lt; ‘EOF’</a></li>
-  <li><a href="#title-about" id="toc-title-about" class="nav-link" data-scroll-target="#title-about">title: “About”</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -150,19 +143,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>下面这个 Python 代码单元会在渲染时运行，输出当前 EC2 环境的系统信息（作为运行证明）：</p>
+<p>Below is a Python code cell that will run during rendering, and output system information from the current EC2 environment.</p>
 <p>import platform import psutil</p>
 <p>print(“Operating System:”, platform.system(), platform.release()) print(“Python Version:”, platform.python_version()) print(“Machine:”, platform.machine()) print(“Processor:”, platform.processor())</p>
 <p>mem = psutil.virtual_memory() print(“Total Memory (MB):”, round(mem.total / (1024<strong>2), 2)) print(“Available Memory (MB):”, round(mem.available / (1024</strong>2), 2))</p>
-<section id="cat-about.qmd-eof" class="level2">
-<h2 class="anchored" data-anchor-id="cat-about.qmd-eof">cat &gt; about.qmd &lt;&lt; ‘EOF’</h2>
-</section>
-<section id="title-about" class="level2">
-<h2 class="anchored" data-anchor-id="title-about">title: “About”</h2>
-<p>This is my personal GitHub Pages site, rendered and published using <strong>Quarto</strong> directly from an AWS EC2 instance.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
