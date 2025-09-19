@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is the About page for my GitHub Pages site."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Assignment 01",
+    "section": "",
+    "text": "下面这个 Python 代码单元会在渲染时运行，输出当前 EC2 环境的系统信息（作为运行证明）：\nimport platform import psutil\nprint(“Operating System:”, platform.system(), platform.release()) print(“Python Version:”, platform.python_version()) print(“Machine:”, platform.machine()) print(“Processor:”, platform.processor())\nmem = psutil.virtual_memory() print(“Total Memory (MB):”, round(mem.total / (10242), 2)) print(“Available Memory (MB):”, round(mem.available / (10242), 2))"
+  },
+  {
+    "objectID": "index.html#cat-about.qmd-eof",
+    "href": "index.html#cat-about.qmd-eof",
+    "title": "Assignment 01",
+    "section": "cat > about.qmd << ‘EOF’",
+    "text": "cat &gt; about.qmd &lt;&lt; ‘EOF’"
+  },
+  {
+    "objectID": "index.html#title-about",
+    "href": "index.html#title-about",
+    "title": "Assignment 01",
+    "section": "title: “About”",
+    "text": "title: “About”\nThis is my personal GitHub Pages site, rendered and published using Quarto directly from an AWS EC2 instance."
+  }
+]
